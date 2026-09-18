@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+:root {
+  --navy: #1e3350;
+  --navy-deep: #15243a;
+  --navy-soft: #2c4668;
+  --amber: #c9912a;
+  --amber-bright: #d4a84b;
+  --oil: #e09b2d;
+  --cream: #f6f1e7;
+  --cream-dark: #ebe3d3;
+  --paper: #faf7f0;
+  --tan: #8d6b45;
+  --brown: #5c4330;
+  --ink: #1c2838;
+  --muted: #5a4a3a;
+}
+
+@theme inline {
+  --color-navy: var(--navy);
+  --color-navy-deep: var(--navy-deep);
+  --color-navy-soft: var(--navy-soft);
+  --color-amber: var(--amber);
+  --color-amber-bright: var(--amber-bright);
+  --color-oil: var(--oil);
+  --color-cream: var(--cream);
+  --color-cream-dark: var(--cream-dark);
+  --color-paper: var(--paper);
+  --color-tan: var(--tan);
+  --color-brown: var(--brown);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --font-sans: var(--font-source-sans);
+  --font-serif: var(--font-cormorant);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--cream);
+  color: var(--ink);
+  font-family: var(--font-source-sans), system-ui, sans-serif;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--amber) 40%, transparent);
+  color: var(--navy-deep);
+}
+
+.texture {
+  background-color: var(--cream);
+  background-image:
+    radial-gradient(ellipse at top, color-mix(in srgb, var(--cream-dark) 65%, transparent), transparent 55%),
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      color-mix(in srgb, var(--tan) 4%, transparent) 3px
+    );
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -100px;
+  z-index: 100;
+  background: var(--navy);
+  color: var(--cream);
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+.focus-ring:focus-visible {
+  outline: 2px solid var(--amber);
+  outline-offset: 3px;
+}
