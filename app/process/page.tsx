@@ -9,42 +9,40 @@ export const metadata: Metadata = {
 
 function SeedIcon() {
   return (
-    <svg viewBox="0 0 64 64" className="h-16 w-16 text-navy" aria-hidden>
-      <ellipse cx="24" cy="34" rx="10" ry="16" fill="currentColor" opacity="0.15" transform="rotate(-25 24 34)" />
-      <ellipse cx="40" cy="30" rx="8" ry="13" fill="#c9912a" opacity="0.85" transform="rotate(20 40 30)" />
-      <ellipse cx="32" cy="38" rx="7" ry="11" fill="#5c4330" opacity="0.7" />
+    <svg viewBox="0 0 64 64" className="h-14 w-14" aria-hidden>
+      <ellipse cx="22" cy="36" rx="8" ry="14" fill="#8d6b45" transform="rotate(-28 22 36)" />
+      <ellipse cx="32" cy="34" rx="8" ry="15" fill="#c9912a" />
+      <ellipse cx="44" cy="32" rx="7" ry="13" fill="#5c4330" transform="rotate(22 44 32)" />
     </svg>
   );
 }
 
 function PressIcon() {
   return (
-    <svg viewBox="0 0 64 64" className="h-16 w-16" aria-hidden>
-      <rect x="18" y="10" width="6" height="36" fill="#1e3350" />
-      <rect x="40" y="10" width="6" height="36" fill="#1e3350" />
-      <rect x="28" y="16" width="8" height="28" fill="#8aa0b8" />
-      <path d="M28 22c6 4 8 8 8 16" stroke="#f6f1e7" strokeWidth="2" fill="none" />
-      <ellipse cx="32" cy="52" rx="6" ry="8" fill="#c9912a" />
+    <svg viewBox="0 0 64 64" className="h-14 w-14" aria-hidden>
+      <path d="M16 12h8v8h16v-8h8v10H16V12z" fill="#1e3350" />
+      <rect x="26" y="22" width="12" height="24" rx="1" fill="#8aa0b8" />
+      <path d="M28 26c5 3 8 8 8 16" stroke="#f6f1e7" strokeWidth="2" fill="none" />
+      <path d="M32 46c-4 6-4 10 0 14 4-4 4-8 0-14z" fill="#c9912a" />
     </svg>
   );
 }
 
 function FilterIcon() {
   return (
-    <svg viewBox="0 0 64 64" className="h-16 w-16" aria-hidden>
-      <path d="M16 14h32l-12 16v16l-8 6V30L16 14z" fill="#1e3350" />
-      <path d="M24 22h16" stroke="#c9912a" strokeWidth="2" />
-      <path d="M26 28h12" stroke="#c9912a" strokeWidth="2" />
+    <svg viewBox="0 0 64 64" className="h-14 w-14" aria-hidden>
+      <path d="M14 16h36l-13 18v14l-10 8V34L14 16z" fill="#1e3350" />
+      <path d="M24 24h16M27 30h10" stroke="#c9912a" strokeWidth="2.2" />
     </svg>
   );
 }
 
 function PackIcon() {
   return (
-    <svg viewBox="0 0 64 64" className="h-16 w-16" aria-hidden>
-      <rect x="20" y="14" width="24" height="36" rx="2" fill="#1e3350" />
-      <rect x="24" y="20" width="16" height="10" fill="#f6f1e7" opacity="0.9" />
-      <ellipse cx="32" cy="42" rx="5" ry="7" fill="#c9912a" />
+    <svg viewBox="0 0 64 64" className="h-14 w-14" aria-hidden>
+      <rect x="18" y="12" width="28" height="40" rx="3" fill="#1e3350" />
+      <rect x="23" y="18" width="18" height="12" fill="#f6f1e7" />
+      <path d="M32 36c-4 6-4 10 0 14 4-4 4-8 0-14z" fill="#c9912a" />
     </svg>
   );
 }
